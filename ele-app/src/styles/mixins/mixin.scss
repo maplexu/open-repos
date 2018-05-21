@@ -1,0 +1,22 @@
+@mixin border-1px($color){
+  position: relative;
+  &:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid $color;
+    content: ' ';
+  }
+}
+
+// 这里定义一个mixin，用来实现在不同的dpr下插入不同倍数的图片
+@mixin bg-image($url){
+  //所有图片正常情况下都使用2X的图片素材
+  background-image: url($url + "@2x.png");
+  //当最小dpr为3时，所有的图片都是以3x的素材
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
+    background-image: url($url + "@3x.png");
+  }
+}

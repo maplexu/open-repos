@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'sell-icon';
+  src: url('./fonts/sell-icon.eot');
+  src: url('./fonts/sell-icon.eot#iefix') format('embedded-opentyped'),
+      url('./fonts/sell-icon.ttf') fromat('truetype'),
+      url('./fonts/sell-icon.woff') fromat('woff'),
+      url('./fonts/sell-icon.svg#sell-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//适配特殊字体的样式
+
+[class^="icon-"], [class*="icon-"] {
+  font-family: "sell-icon" !important;    //这里使用!important防止在一些浏览器中无法使用;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  //一些特定的优化渲染的属性
+  -webkit-font-smoothing: antialiased;    //对字体抗锯齿化的调整，让字体变的更加清晰
+  -moz-osx-font-smoothing: grayscale;      //同上的作用
+}
+
+// 下面就是定义的一些特殊字体
+
+.icon-arrow_lift:before {
+  content: "\e900";
+}
+.icon-thumb_up:before {
+  content: "\e901";
+}
+.icon-thumb_down:before {
+  content: "\e902";
+}
+.icon-shopping_cart:before {
+  content: "\e903";
+}
+.icon-favorite:before {
+  content: "\e904";
+}
+.icon-check_circle:before {
+  content: "\e905";
+}
+.icon-close:before {
+  content: "\e906";
+}
+.icon-remove_circle_outline:before {
+  content: "\e907";
+}
+.icon-add_circle:before {
+  content: "\e908";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e909";
+}

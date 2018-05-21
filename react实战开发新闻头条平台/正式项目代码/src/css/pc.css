@@ -1,0 +1,288 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 48px;
+  height: 48px;
+}
+.logo span{
+  font-size: 24px;
+  padding-left: 5px;
+}
+.footer {
+  padding: 10px 0;
+  text-align: center;
+}
+.clearfix{
+  zoom: 1;
+}
+.clearfix:after{
+  display: block;
+  content: '';
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+/*让右上角的用户信息块右浮动*/
+.register{
+  float: right !important;
+}
+
+
+/*
+  修改ant-design框架的样式****start
+*/
+/* 让右上角的用户信息块中的（用户名--个人中心--退出）三个按钮同一行排列 */
+.ant-menu-horizontal > .ant-menu-item > a, .ant-menu-horizontal > .ant-menu-submenu > a{
+  display: inline-block !important;
+}
+/* 减小card组件的内间距(原来的值是24px) */
+.ant-card-body{
+  padding: 12px !important;
+}
+/*
+  修改ant-design框架的样式****end
+*/
+
+/*
+  首页新闻内容组件的样式****start
+*/
+.container{
+  padding-top: 20px;
+}
+.leftContainer{
+  float: left;
+  width: 400px;
+}
+.carousel {
+  float: left;
+  width: 400px;
+  margin-bottom: 0.2rem;
+}
+.carousel img {
+  width: 400px;
+  height: 260px;
+}
+
+.topNewsList {
+  float: left;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.topNewsList li{
+  width: 410px;
+  height: 27px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topNewsList a {
+  line-height: 27px !important;
+  color: #666 !important;
+}
+
+.tab_news {
+  float: left;
+  width: 460px;
+  margin-left: 10px !important;
+}
+.tab_product{
+  float: left;
+  width: 400px;
+  margin-left: 10px !important;
+}
+
+.tab_product li {
+    height: 27px;
+    line-height: 27px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 257px;
+    text-overflow: ellipsis;
+}
+
+/* news_image_block **** start */
+
+.imageblock{
+  float: left;
+}
+.custom-image {
+  padding: 5px;
+}
+.custom-card h3{
+  margin-bottom: 0px;
+}
+.custom-card p{
+  font-size: 10px;
+}
+/* news_image_block **** end */
+
+
+/* 新闻详情模块 news_details ****start */
+.articleContainer {
+  padding: 10px 30px;
+}
+.articleContainer #title{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.articleContainer .article-title h1{
+  font-size: 24px;
+  font-weight: bold;
+}
+.articleContainer .article-src-time {
+  padding: 10px 0;
+}
+.articleContainer #content{
+  font-size: 18px;
+}
+.articleContainer .img{
+  text-align: center;
+}
+.articleContainer #content img{
+  width: 80%;
+}
+.articleContainer .img-wrap{
+  padding-bottom: 0px!important;
+}
+
+/* 新闻详情模块 news_details ****end */
+
+
+/**网易产品模块引入的代码样式****start **/
+
+.productlinks {
+    width: 398px;
+    height: 380px;
+    margin-top: 6px;
+    background: #F7F7F7;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.productlinks-item a{
+  color: #2db7f5;
+}
+.productlinks-item {
+    text-align: left;
+    float: left;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    padding: 13px 0 13px 10px;
+    line-height: 25px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.productlinks-i {
+    text-indent: -10em;
+}
+
+.productlinks-item strong {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
+.productlinks-item a {
+    padding: 0 4px 0 0;
+    white-space: nowrap;
+}
+
+.productlinks-item .last, .productlinks-item .pr0 {
+    padding: 0;
+}
+
+.productlinks-item .pr2 {
+    padding-right: 2px;
+}
+
+.changeview .productlinks-item {
+    padding: 4px 0 3px 50px;
+}
+
+.changeview .productlinks {
+    height: 300px;
+    margin-top: 56px;
+}
+
+.item-mail, .item-sns {
+    background: #fff;
+}
+
+.productlinks-i-mail, .productlinks-i-game, .productlinks-i-sns, .productlinks-i-recommend {
+    width: 40px;
+    height: 40px;
+    text-indent: -10em;
+    position: absolute;
+    z-index: 3;
+}
+
+.productlinks-i-mail {
+    background-position: 12px -167px;
+}
+
+.productlinks-i-game {
+    background-position: 7px -217px;
+}
+
+.productlinks-i-sns {
+    background-position: 12px -262px;
+}
+
+.productlinks-i-recommend {
+    background-position: 12px -308px;
+}
+
+.ntes-nav-select-unfold .productlinks-mail-fold {
+    display: block;
+}
+
+.productlinks-mail-fold {
+    position: absolute;
+    z-index: 100;
+    width: 118px;
+    height: 154px;
+    top: -163px;
+    left: -36px;
+    display: none;
+    background: url(http://img2.cache.netease.com/www/v2013/img/bg_fmail_v3.png) left top no-repeat;
+}
+
+.productlinks-mail-warp {
+    position: relative;
+    z-index: 100;
+    background: none;
+}
+
+.productlinks-fold-163, .productlinks-fold-126, .productlinks-fold-yeah, .productlinks-fold-mob {
+    float: left;
+    display: inline;
+    width: 116px;
+    height: 34px;
+    text-indent: -100em;
+    overflow: hidden;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+
+.productlinks-fold-163 {
+    margin-top: 1px;
+}
+
+
+
+
+/**网易产品模块引入的代码样式****end **/
